@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Unit-I: Introduction to Python and Functions</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/material.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/python/python.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fab fa-python"></i>
+                    <h1>Python Unit-I</h1>
+                </div>
+                <nav class="nav-desktop">
+                    <ul class="nav-list">
+                        <li><a href="#python-concepts" class="nav-link active">Concepts</a></li>
+                        <li><a href="#control-statements" class="nav-link">Control</a></li>
+                        <li><a href="#functions" class="nav-link">Functions</a></li>
+                        <li><a href="#modules" class="nav-link">Modules</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <nav class="nav-mobile">
+                <ul class="mobile-nav-list">
+                    <li><a href="#python-concepts" class="nav-link">Python Concepts</a></li>
+                    <li><a href="#control-statements" class="nav-link">Control Statements</a></li>
+                    <li><a href="#functions" class="nav-link">Functions</a></li>
+                    <li><a href="#modules" class="nav-link">Modules</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 0%"></div>
+        </div>
+        <span class="progress-text">0% Complete</span>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Introduction to Python and Functions</h2>
+                <p>Master the fundamentals of Python programming with interactive examples and exercises</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <i class="fas fa-clock"></i>
+                        <span>10 Hours</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-code"></i>
+                        <span>4 Sections</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-tasks"></i>
+                        <span>Interactive</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Section 1: Python Concepts -->
+        <section id="python-concepts" class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <i class="fas fa-laptop-code"></i>
+                    <h2>Python Concepts</h2>
+                    <p>Learn the fundamental building blocks of Python programming</p>
+                </div>
+
+                <!-- Introduction to Python -->
+                <div class="topic-card">
+                    <h3>Introduction to Python</h3>
+                    <div class="topic-content">
+                        <p><strong>Python</strong> is a high-level, interpreted programming language created by Guido van Rossum in 1991. It's known for its simplicity, readability, and versatility.</p>
+                        
+                        <div class="features-grid">
+                            <div class="feature">
+                                <i class="fas fa-eye"></i>
+                                <h4>Readable</h4>
+                                <p>Clean, easy-to-understand syntax</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-rocket"></i>
+                                <h4>Versatile</h4>
+                                <p>Web, AI, data science, automation</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <h4>Community</h4>
+                                <p>Large, supportive community</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <h4>Libraries</h4>
+                                <p>Extensive library ecosystem</p>
+                            </div>
+                        </div>
+
+                        <div class="code-example">
+                            <h4>Your First Python Program</h4>
+                            <div class="code-editor-container">
+                                <textarea class="code-editor" data-lang="python">print("Hello, World!")
+print("Welcome to Python programming!")
+
+# This is how easy Python is!
+name = "Python"
+print(f"I love {name}!")</textarea>
+                                <button class="run-btn">Run Code</button>
+                            </div>
+                            <div class="code-output">
+                                <div class="output-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Variables -->
+                <div class="topic-card">
+                    <h3>Variables</h3>
+                    <div class="topic-content">
+                        <p>Variables are named containers that store data values. In Python, you don't need to declare variables explicitly - just assign a value!</p>
+                        
+                        <div class="info-box">
+                            <i class="fas fa-lightbulb"></i>
+                            <strong>Key Rules:</strong>
+                            <ul>
+                                <li>Must start with letter or underscore</li>
+                                <li>Can contain letters, numbers, underscores</li>
+                                <li>Case-sensitive (age ≠ Age)</li>
+                                <li>Cannot use Python keywords</li>
+                            </ul>
+                        </div>
+
+                        <div class="code-example">
+                            <h4>Variable Examples</h4>
+                            <div class="code-editor-container">
+                                <textarea class="code-editor" data-lang="python"># Basic variable assignment
+name = "Alice"
+age = 25
+height = 5.6
+is_student = True
+
+print(f"Name: {name}")
+print(f"Age: {age}")
+print(f"Height: {height} feet")
+print(f"Student: {is_student}")
+
+# Multiple assignment
+x, y, z = 10, 20, 30
+print(f"x={x}, y={y}, z={z}")
+
+# Same value to multiple variables
+a = b = c = 100
+print(f"a={a}, b={b}, c={c}")</textarea>
+                                <button class="run-btn">Run Code</button>
+                            </div>
+                            <div class="code-output">
+                                <div class="output-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Keywords -->
+                <div class="topic-card">
+                    <h3>Keywords</h3>
+                    <div class="topic-content">
+                        <p>Keywords are reserved words in Python that have special meanings. You cannot use them as variable names, function names, or identifiers.</p>
+                        
+                        <div class="keywords-grid">
+                            <div class="keyword-group">
+                                <h4>Control Flow</h4>
+                                <div class="keyword-list">
+                                    <span class="keyword">if</span>
+                                    <span class="keyword">elif</span>
+                                    <span class="keyword">else</span>
+                                    <span class="keyword">for</span>
+                                    <span class="keyword">while</span>
+                                    <span class="keyword">break</span>
+                                    <span class="keyword">continue</span>
+                                    <span class="keyword">pass</span>
+                                </div>
+                            </div>
+                            <div class="keyword-group">
+                                <h4>Functions & Classes</h4>
+                                <div class="keyword-list">
+                                    <span class="keyword">def</span>
+                                    <span class="keyword">return</span>
+                                    <span class="keyword">class</span>
+                                    <span class="keyword">lambda</span>
+                                    <span class="keyword">yield</span>
+                                </div>
+                            </div>
+                            <div class="keyword-group">
+                                <h4>Boolean & None</h4>
+                                <div class="keyword-list">
+                                    <span class="keyword">True</span>
+                                    <span class="keyword">False</span>
+                                    <span class="keyword">None</span>
+                                    <span class="keyword">and</span>
+                                    <span class="keyword">or</span>
+                                    <span class="keyword">not</span>
+                                </div>
+                            </div>
+                            <div class="keyword-group">
+                                <h4>Imports & Others</h4>
+                                <div class="keyword-list">
+                                    <span class="keyword">import</span>
+                                    <span class="keyword">from</span>
+                                    <span class="keyword">as</span>
+                                    <span class="keyword">try</span>
+                                    <span class="keyword">except</span>
+                                    <span class="keyword">finally</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="code-example">
+                            <h4>Keywords in Action</h4>
+                            <div class="code-editor-container">
+                                <textarea class="code-editor" data-lang="python"># Keywords cannot be used as variables
+# This would cause an error: if = 5
+
+# But we can use keywords in their proper context
+import keyword
+
+# Display all Python keywords
+print("Python Keywords:")
+for kw in keyword.kwlist[:10]:  # First 10 keywords
+    print(f"• {kw}")
+
+print(f"\nTotal keywords: {len(keyword.kwlist)}")
+
+# Example of keyword usage
+def check_age(age):
+    if age >= 18:
+        return "Adult"
+    else:
+        return "Minor"
+
+result = check_age(20)
+print(f"Status: {result}")</textarea>
+                                <button class="run-btn">Run Code</button>
+                            </div>
+                            <div class="code-output">
+                                <div class="output-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Identifiers -->
+                <div class="topic-card">
+                    <h3>Identifiers</h3>
+                    <div class="topic-content">
+                        <p>Identifiers are user-defined names for variables, functions, classes, modules, etc. They must follow specific naming conventions.</p>
+                        
+                        <div class="rules-comparison">
+                            <div class="valid-names">
+                                <h4><i class="fas fa-check-circle"></i> Valid Identifiers</h4>
+                                <ul>
+                                    <li><code>user_name</code></li>
+                                    <li><code>_private</code></li>
+                                    <li><code>firstName</code></li>
+                                    <li><code>age2</code></li>
+                                    <li><code>PI</code></li>
+                                    <li><code>myClass</code></li>
+                                </ul>
+                            </div>
+                            <div class="invalid-names">
+                                <h4><i class="fas fa-times-circle"></i> Invalid Identifiers</h4>
+                                <ul>
+                                    <li><code>2age</code> (starts with number)</li>
+                                    <li><code>my-name</code> (contains hyphen)</li>
+                                    <li><code>for</code> (Python keyword)</li>
+                                    <li><code>user name</code> (contains space)</li>
+                                    <li><code>@variable</code> (special character)</li>
+                                    <li><code>class</code> (Python keyword)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="code-example">
+                            <h4>Identifier Best Practices</h4>
+                            <div class="code-editor-container">
+                                <textarea class="code-editor" data-lang="python"># Good naming conventions
+student_name = "John Doe"
+total_marks = 95
+is_passed = True
+
+# Class names (PascalCase)
+class StudentRecord:
+    pass
+
+# Function names (snake_case)
+def calculate_grade(marks):
+    if marks >= 90:
+        return "A+"
+    elif marks >= 80:
+        return "A"
+    elif marks >= 70:
+        return "B"
+    else:
+        return "C"
+
+# Constants (UPPER_CASE)
+MAX_STUDENTS = 100
+PI = 3.14159
+
+# Using the function
+grade = calculate_grade(total_marks)
+print(f"Student: {student_name}")
+print(f"Marks: {total_marks}")
+print(f"Grade: {grade}")
+print(f"Passed: {is_passed}")</textarea>
+                                <button class="run-btn">Run Code</button>
+                            </div>
+                            <div class="code-output">
+                                <div class="output-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Literals -->
+                <div class="topic-card">
+                    <h3>Literals</h3>
+                    <div class="topic-content">
+                        <p>Literals are fixed values written directly in code. Python supports several types of literals.</p>
+                        
+                        <div class="literals-grid">
+                            <div class="literal-type">
+                                <h4><i class="fas fa-quote-right"></i> String Literals</h4>
+                                <div class="literal-examples">
+                                    <code>'Hello'</code>
+                                    <code>"Python"</code>
+                                    <code>"""Multi-line"""</code>
+                                </div>
+                            </div>
+                            <div class="literal-type">
+                                <h4><i class="fas fa-calculator"></i> Numeric Literals</h4>
+                                <div class="literal-examples">
+                                    <code>42</code>
+                                    <code>3.14</code>
+                                    <code>2+3j</code>
+                                </div>
+                            </div>
+                            <div class="literal-type">
+                                <h4><i class="fas fa-toggle-on"></i> Boolean Literals</h4>
+                                <div class="literal-examples">
+                                    <code>True</code>
+                                    <code>False</code>
+                                </div>
+                            </div>
+                            <div class="literal-type">
+                                <h4><i class="fas fa-ban"></i> Special Literals</h4>
+                                <div class="literal-examples">
+                                    <code>None</code>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="code-example">
+                            <h4>Working with Literals</h4>
+                            <div class="code-editor-container">
+                                <textarea class="code-editor" data-lang="python"># String literals
+single_quote = 'Hello World'
+double_quote = "Python Programming"
+triple_quote = """This is a
+multi-line
+string literal"""
+
+print("String Literals:")
+print(f"Single: {single_quote}")
+print(f"Double: {double_quote}")
+print(f"Triple: {triple_quote}")
+
+# Numeric literals
+integer = 42
+float_num = 3.14159
+complex_num = 2 + 3j
+binary = 0b1010  # Binary (10 in decimal)
+octal = 0o12     # Octal (10 in decimal)
+hex_num = 0xFF   # Hexadecimal (255 in decimal)
+
+print("\nNumeric Literals:")
+print(f"Integer: {integer}")
+print(f"Float: {float_num}")
+print(f"Complex: {complex_num}")
+print(f"Binary: {binary}")
+print(f"Octal: {octal}")
+print(f"Hex: {hex_num}")
+
+# Boolean and special literals
+is_active = True
+is_complete = False
+result = None
+
+print("\nBoolean & Special:")
+print(f"Active: {is_active}")
+print(f"Complete: {is_complete}")
+print(f"Result: {result}")</textarea>
+                                <button class="run-btn">Run Code</button>
+                            </div>
+                            <div class="code-output">
+                                <div class="output-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Operators -->
+                <div class="topic-card">
+                    <h3>Operators</h3>
+                    <div class="topic-content">
+                        <p>Operators are symbols that perform operations on variables and values. Python supports various types of operators.</p>
+                        
+                        <div class="operators-grid">
+                            <div class="operator-category">
+                                <h4>Arithmetic Operators</h4>
+                                <div class="operator-list">
+                                    <div class="operator-item">
+                                        <code>+</code> <span>Addition</span>
+                                    </div>
+                                    <div class="operator-item">
+                                        <code>-</code> <span>Subtraction</span>
+                                    </div>
+                                    <div class="operator-item">
+                                        <code>*</code> <span>Multiplication</span>
+                                    </div>
+                                    <div class="operator-item">
+                                        <code>/</code> <span>Division</span>
+                                    </div>
+                                    <div class="operator-item">
+                                        <code>**</code> <span>Exponentiation</span>
+                                    </div>
+                                    <div class="operator-item">
+                                        <code>//</code> <span>Floor Division</span>
+                                    </div>
+                                    <div class="operator-item">
+                                        <code>%</code> <span>Modulus</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="operator-category">
+                                <h4>Comparison Operators</h4>
+                                <div class="operator-list">
+                                    <div class="operator-item">
+                                        <code>==</code> <span>Equal to</span>
+                                    </div>
+                                    <div class="operator-item">
+                                        <code>!=</code> <span>Not equal to</span>
+                                    </div>
+                                    <div class="operator-item">
+                                        <code>&lt;</code> <span>Less than</span>
+                                    </div>
+                                    <div class="operator-item">
+                                        <code>&gt;</code> <span>Greater than</span>
+                                    </div>
+                                    <div class="operator-item">
+                                        <code>&lt;=</code> <span>Less than or equal</span>
+                                    </div>
+                                    <div class="operator-item">
+                                        <code>&gt;=</code> <span>Greater than or equal</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="operator-category">
+                                <h4>Logical Operators</h4>
+                                <div class="operator-list">
+                                    <div class="operator-item">
+                                        <code>and</code> <span>Logical AND</span>
+                                    </div>
+                                    <div class="operator-item">
+                                        <code>or</code> <span>Logical OR</span>
+                                    </div>
+                                    <div class="operator-item">
+                                        <code>not</code> <span>Logical NOT</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="operator-category">
+                                <h4>Assignment Operators</h4>
+                                <div class="operator-list">
+                                    <div class="operator-item">
+                                        <code>=</code> <span>Assignment</span>
+                                    </div>
+                                    <div class="operator-item">
+                                        <code>+=</code> <span>Add and assign</span>
+                                    </div>
+                                    <div class="operator-item">
+                                        <code>-=</code> <span>Subtract and assign</span>
+                                    </div>
+                                    <div class="operator-item">
+                                        <code>*=</code> <span>Multiply and assign</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="code-example">
+                            <h4>Operators in Action</h4>
+                            <div class="code-editor-container">
+                                <textarea class="code-editor" data-lang="python"># Arithmetic operators
+a = 15
+b = 4
+
+print("Arithmetic Operations:")
+print(f"{a} + {b} = {a + b}")
+print(f"{a} - {b} = {a - b}")
+print(f"{a} * {b} = {a * b}")
+print(f"{a} / {b} = {a / b}")
+print(f"{a} ** {b} = {a ** b}")
+print(f"{a} // {b} = {a // b}")
+print(f"{a} % {b} = {a % b}")
+
+# Comparison operators
+x = 10
+y = 20
+
+print("\nComparison Operations:")
+print(f"{x} == {y} is {x == y}")
+print(f"{x} != {y} is {x != y}")
+print(f"{x} < {y} is {x < y}")
+print(f"{x} > {y} is {x > y}")
+
+# Logical operators
+p = True
+q = False
+
+print("\nLogical Operations:")
+print(f"True and False = {p and q}")
+print(f"True or False = {p or q}")
+print(f"not True = {not p}")
+
+# Assignment operators
+counter = 5
+print(f"\nInitial counter: {counter}")
+counter += 3
+print(f"After += 3: {counter}")
+counter *= 2
+print(f"After *= 2: {counter}")</textarea>
+                                <button class="run-btn">Run Code</button>
+                            </div>
+                            <div class="code-output">
+                                <div class="output-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comments -->
+                <div class="topic-card">
+                    <h3>Comments</h3>
+                    <div class="topic-content">
+                        <p>Comments are notes in your code that Python ignores. They help explain what your code does and make it more readable.</p>
+                        
+                        <div class="comment-types">
+                            <div class="comment-type">
+                                <h4><i class="fas fa-hashtag"></i> Single-line Comments</h4>
+                                <p>Use <code>#</code> for single-line comments</p>
+                                <code># This is a single-line comment</code>
+                            </div>
+                            <div class="comment-type">
+                                <h4><i class="fas fa-quote-left"></i> Multi-line Comments</h4>
+                                <p>Use triple quotes for multi-line comments</p>
+                                <code>"""This is a multi-line comment"""</code>
+                            </div>
+                            <div class="comment-type">
+                                <h4><i class="fas fa-book"></i> Docstrings</h4>
+                                <p>Special comments that describe functions/classes</p>
+                                <code>def func():<br>&nbsp;&nbsp;&nbsp;&nbsp;"""This is a docstring"""</code>
+                            </div>
+                        </div>
+
+                        <div class="code-example">
+                            <h4>Comment Examples</h4>
+                            <div class="code-editor-container">
+                                <textarea class="code-editor" data-lang="python"># This is a single-line comment
+# Comments help explain your code
+
+"""
+This is a multi-line comment
+It can span multiple lines
+Very useful for longer explanations
+"""
+
+def calculate_area(radius):
+    """
+    Calculate the area of a circle.
+    
+    Args:
+        radius (float): The radius of the circle
+        
+    Returns:
+        float: The area of the circle
+    """
+    pi = 3.14159  # Value of pi
+    area = pi * radius ** 2  # Area formula: π * r²
+    return area
+
+# Call the function
+circle_radius = 5
+result = calculate_area(circle_radius)
+print(f"Area of circle with radius {circle_radius}: {result}")
+
+# Inline comments (use sparingly)
+x = 10  # Initialize x with 10
+y = x * 2  # Double the value
+
+print(f"x = {x}, y = {y}")
+
+# TODO: Add input validation
+# FIXME: Handle negative radius values
+# NOTE: Consider using math.pi instead</textarea>
+                                <button class="run-btn">Run Code</button>
+                            </div>
+                            <div class="code-output">
+                                <div class="output-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quiz for Python Concepts -->
+                <div class="quiz-section">
+                    <h3><i class="fas fa-question-circle"></i> Test Your Knowledge</h3>
+                    <div class="quiz" data-section="python-concepts">
+                        <div class="question active" data-question="0">
+                            <h4>Which is a valid Python identifier?</h4>
+                            <div class="options">
+                                <button class="option" data-option="0">1value</button>
+                                <button class="option" data-option="1">user_name</button>
+                                <button class="option" data-option="2">my-var</button>
+                                <button class="option" data-option="3">class</button>
+                            </div>
+                            <div class="feedback"></div>
+                        </div>
+                        <div class="question" data-question="1">
+                            <h4>Which operator performs exponentiation in Python?</h4>
+                            <div class="options">
+                                <button class="option" data-option="0">*</button>
+                                <button class="option" data-option="1">**</button>
+                                <button class="option" data-option="2">//</button>
+                                <button class="option" data-option="3">%</button>
+                            </div>
+                            <div class="feedback"></div>
+                        </div>
+                        <div class="quiz-navigation">
+                            <button class="prev-question" disabled>Previous</button>
+                            <span class="question-counter">1 of 2</span>
+                            <button class="next-question">Next</button>
+                        </div>
+                        <div class="quiz-results">
+                            <p class="score"></p>
+                            <button class="restart-quiz">Restart Quiz</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Control Statements -->
+        <section id="control-statements" class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <i class="fas fa-code-branch"></i>
+                    <h2>Control Statements</h2>
+                    <p>Master decision-making and repetition in Python</p>
+                </div>
+
+                <!-- if Statement -->
+                <div class="topic-card">
+                    <h3>if Statement</h3>
+                    <div class="topic-content">
+                        <p>The <code>if</code> statement executes a block of code only if a specified condition is true.</p>
+                        
+                        <div class="syntax-box">
+                            <h4>Syntax:</h4>
+                            <pre><code>if condition:
+    # code block to execute if condition is True</code></pre>
+                        </div>
+
+                        <div class="code-example">
+                            <h4>if Statement Examples</h4>
+                            <div class="code-editor-container">
+                                <textarea class="code-editor" data-lang="python"># Basic if statement
+age = 18
+
+if age >= 18:
+    print("You are eligible to vote!")
+
+# Multiple conditions
+temperature = 25
+
+if temperature > 30:
+    print("It's hot outside!")
+
+if temperature >= 20:
+    print("Perfect weather for a walk!")
+
+# Using variables in conditions
+username = "admin"
+password = "secret123"
+
+if username == "admin":
+    print("Welcome, administrator!")
+
+if len(password) >= 8:
+    print("Password is strong enough")
+
+# Boolean variables
+is_weekend = True
+has_homework = False
+
+if is_weekend:
+    print("Time to relax!")
+
+if not has_homework:
+    print("No homework to worry about!")
+
+print("Program completed")</textarea>
+                                <button class="run-btn">Run Code</button>
+                            </div>
+                            <div class="code-output">
+                                <div class="output-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- if-else Statement -->
+                <div class="topic-card">
+                    <h3>if-else Statement</h3>
+                    <div class="topic-content">
+                        <p>The <code>if-else</code> statement provides an alternative path when the condition is false.</p>
+                        
+                        <div class="syntax-box">
+                            <h4>Syntax:</h4>
+                            <pre><code>if condition:
+    # code block if condition is True
+else:
+    # code block if condition is False</code></pre>
+                        </div>
+
+                        <div class="code-example">
+                            <h4>if-else Examples</h4>
+                            <div class="code-editor-container">
+                                <textarea class="code-editor" data-lang="python"># Basic if-else
+number = 7
+
+if number % 2 == 0:
+    print(f"{number} is even")
+else:
+    print(f"{number} is odd")
+
+# Age checker
+age = 16
+
+if age >= 18:
+    print("You can vote!")
+else:
+    print(f"Wait {18-age} more years to vote")
+
+# Grade calculator
+marks = 85
+
+if marks >= 60:
+    print("Congratulations! You passed!")
+else:
+    print("Sorry, you failed. Better luck next time!")
+
+# Temperature checker
+temp = 15
+
+if temp > 25:
+    print("Wear light clothes")
+else:
+    print("Wear warm clothes")
+
+# Login system
+username = "user123"
+correct_username = "admin"
+
+if username == correct_username:
+    print("Login successful!")
+else:
+    print("Invalid username!")
+
+print("Program finished")</textarea>
+                                <button class="run-btn">Run Code</button>
+                            </div>
+                            <div class="code-output">
+                                <div class="output-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Continue with other control statements... -->
+                <div class="topic-card">
+                    <h3>for Loop</h3>
+                    <div class="topic-content">
+                        <p>The <code>for</code> loop is used to iterate over sequences like lists, strings, or ranges.</p>
+                        
+                        <div class="code-example">
+                            <h4>for Loop Examples</h4>
+                            <div class="code-editor-container">
+                                <textarea class="code-editor" data-lang="python"># Basic for loop with range
+print("Counting from 1 to 5:")
+for i in range(1, 6):
+    print(f"Number: {i}")
+
+# Iterating over a string
+word = "Python"
+print(f"\nLetters in '{word}':")
+for letter in word:
+    print(f"Letter: {letter}")
+
+# Iterating over a list
+fruits = ["apple", "banana", "cherry", "date"]
+print(f"\nFruits list:")
+for fruit in fruits:
+    print(f"I love {fruit}!")
+
+# Using range with step
+print(f"\nEven numbers from 2 to 10:")
+for num in range(2, 11, 2):
+    print(num)
+
+# Nested for loops
+print(f"\nMultiplication table for 2:")
+for i in range(1, 6):
+    result = 2 * i
+    print(f"2 x {i} = {result}")
+
+print("For loop examples completed!")</textarea>
+                                <button class="run-btn">Run Code</button>
+                            </div>
+                            <div class="code-output">
+                                <div class="output-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quiz for Control Statements -->
+                <div class="quiz-section">
+                    <h3><i class="fas fa-question-circle"></i> Control Statements Quiz</h3>
+                    <div class="quiz" data-section="control-statements">
+                        <div class="question active" data-question="0">
+                            <h4>Which statement stops a loop completely?</h4>
+                            <div class="options">
+                                <button class="option" data-option="0">continue</button>
+                                <button class="option" data-option="1">break</button>
+                                <button class="option" data-option="2">pass</button>
+                                <button class="option" data-option="3">elif</button>
+                            </div>
+                            <div class="feedback"></div>
+                        </div>
+                        <div class="quiz-navigation">
+                            <button class="prev-question" disabled>Previous</button>
+                            <span class="question-counter">1 of 1</span>
+                            <button class="next-question">Next</button>
+                        </div>
+                        <div class="quiz-results">
+                            <p class="score"></p>
+                            <button class="restart-quiz">Restart Quiz</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Functions -->
+        <section id="functions" class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <i class="fas fa-function"></i>
+                    <h2>Functions</h2>
+                    <p>Learn to create reusable blocks of code</p>
+                </div>
+
+                <!-- Functions Overview -->
+                <div class="topic-card">
+                    <h3>Functions Overview</h3>
+                    <div class="topic-content">
+                        <p>Functions are reusable blocks of code that perform specific tasks. They help organize code and avoid repetition.</p>
+                        
+                        <div class="function-benefits">
+                            <div class="benefit">
+                                <i class="fas fa-recycle"></i>
+                                <h4>Reusability</h4>
+                                <p>Write once, use many times</p>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <h4>Modularity</h4>
+                                <p>Break complex problems into smaller pieces</p>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-tools"></i>
+                                <h4>Maintainability</h4>
+                                <p>Easier to update and debug</p>
+                            </div>
+                        </div>
+
+                        <div class="code-example">
+                            <h4>Basic Function Examples</h4>
+                            <div class="code-editor-container">
+                                <textarea class="code-editor" data-lang="python"># Simple function without parameters
+def greet():
+    print("Hello, World!")
+    print("Welcome to Python functions!")
+
+# Call the function
+greet()
+
+# Function with parameters
+def greet_person(name):
+    print(f"Hello, {name}!")
+    print("Nice to meet you!")
+
+# Call with different names
+greet_person("Alice")
+greet_person("Bob")
+
+# Function with return value
+def add_numbers(a, b):
+    result = a + b
+    return result
+
+# Use the return value
+sum1 = add_numbers(5, 3)
+sum2 = add_numbers(10, 20)
+print(f"5 + 3 = {sum1}")
+print(f"10 + 20 = {sum2}")
+
+# Function with multiple parameters and return
+def calculate_rectangle_area(length, width):
+    area = length * width
+    return area
+
+area = calculate_rectangle_area(5, 3)
+print(f"Rectangle area: {area} square units")</textarea>
+                                <button class="run-btn">Run Code</button>
+                            </div>
+                            <div class="code-output">
+                                <div class="output-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lambda Functions -->
+                <div class="topic-card">
+                    <h3>Lambda Functions</h3>
+                    <div class="topic-content">
+                        <p>Lambda functions are small, anonymous functions defined using the <code>lambda</code> keyword. They're perfect for simple operations.</p>
+                        
+                        <div class="code-example">
+                            <h4>Lambda Function Examples</h4>
+                            <div class="code-editor-container">
+                                <textarea class="code-editor" data-lang="python"># Basic lambda function
+square = lambda x: x ** 2
+print(f"Square of 5: {square(5)}")
+
+# Lambda with multiple parameters  
+add = lambda a, b: a + b
+print(f"3 + 7 = {add(3, 7)}")
+
+# Using lambda with built-in functions
+numbers = [1, 2, 3, 4, 5]
+squares = list(map(lambda x: x**2, numbers))
+print(f"Original: {numbers}")
+print(f"Squares: {squares}")
+
+# Lambda for filtering
+ages = [12, 16, 18, 21, 25, 30]
+adults = list(filter(lambda age: age >= 18, ages))
+print(f"All ages: {ages}")
+print(f"Adults (>=18): {adults}")
+
+# Lambda for sorting
+students = [('Alice', 85), ('Bob', 92), ('Charlie', 78)]
+# Sort by grade (second element)
+sorted_students = sorted(students, key=lambda student: student[1])
+print(f"Students sorted by grade: {sorted_students}")
+
+# Comparison: Regular function vs Lambda
+def multiply_regular(x, y):
+    return x * y
+
+multiply_lambda = lambda x, y: x * y
+
+print(f"Regular function: {multiply_regular(4, 6)}")
+print(f"Lambda function: {multiply_lambda(4, 6)}")</textarea>
+                                <button class="run-btn">Run Code</button>
+                            </div>
+                            <div class="code-output">
+                                <div class="output-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quiz for Functions -->
+                <div class="quiz-section">
+                    <h3><i class="fas fa-question-circle"></i> Functions Quiz</h3>
+                    <div class="quiz" data-section="functions">
+                        <div class="question active" data-question="0">
+                            <h4>What keyword defines a function in Python?</h4>
+                            <div class="options">
+                                <button class="option" data-option="0">func</button>
+                                <button class="option" data-option="1">def</button>
+                                <button class="option" data-option="2">lambda</button>
+                                <button class="option" data-option="3">return</button>
+                            </div>
+                            <div class="feedback"></div>
+                        </div>
+                        <div class="quiz-navigation">
+                            <button class="prev-question" disabled>Previous</button>
+                            <span class="question-counter">1 of 1</span>
+                            <button class="next-question">Next</button>
+                        </div>
+                        <div class="quiz-results">
+                            <p class="score"></p>
+                            <button class="restart-quiz">Restart Quiz</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Modules -->
+        <section id="modules" class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <i class="fas fa-puzzle-piece"></i>
+                    <h2>Modules</h2>
+                    <p>Extend Python with built-in and custom modules</p>
+                </div>
+
+                <!-- Built-in Modules -->
+                <div class="topic-card">
+                    <h3>Built-in Modules</h3>
+                    <div class="topic-content">
+                        <p>Python comes with many built-in modules that provide additional functionality.</p>
+                        
+                        <div class="code-example">
+                            <h4>Popular Built-in Modules</h4>
+                            <div class="code-editor-container">
+                                <textarea class="code-editor" data-lang="python"># Math module
+import math
+
+print("Math Module Examples:")
+print(f"Square root of 16: {math.sqrt(16)}")
+print(f"Value of pi: {math.pi}")
+print(f"Factorial of 5: {math.factorial(5)}")
+
+# Random module
+import random
+
+print("\nRandom Module Examples:")
+print(f"Random number 1-10: {random.randint(1, 10)}")
+print(f"Random choice from list: {random.choice(['apple', 'banana', 'cherry'])}")
+
+# Datetime module
+import datetime
+
+print("\nDatetime Module Examples:")
+now = datetime.datetime.now()
+print(f"Current date and time: {now}")
+print(f"Current year: {now.year}")
+
+# Using specific imports
+from math import pow, ceil
+print(f"\n2 to the power of 3: {pow(2, 3)}")
+print(f"Ceiling of 4.3: {ceil(4.3)}")
+
+# Using aliases
+import random as rnd
+print(f"Random float: {rnd.random()}")</textarea>
+                                <button class="run-btn">Run Code</button>
+                            </div>
+                            <div class="code-output">
+                                <div class="output-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User-defined Modules -->
+                <div class="topic-card">
+                    <h3>User-defined Modules</h3>
+                    <div class="topic-content">
+                        <p>You can create your own modules by saving Python code in .py files and importing them.</p>
+                        
+                        <div class="code-example">
+                            <h4>Creating and Using Custom Modules</h4>
+                            <div class="code-editor-container">
+                                <textarea class="code-editor" data-lang="python"># Simulating a custom module (calculator.py)
+# In practice, this would be in a separate file
+
+def add(a, b):
+    """Add two numbers"""
+    return a + b
+
+def subtract(a, b):
+    """Subtract two numbers"""
+    return a - b
+
+def multiply(a, b):
+    """Multiply two numbers"""
+    return a * b
+
+def divide(a, b):
+    """Divide two numbers"""
+    if b != 0:
+        return a / b
+    else:
+        return "Cannot divide by zero!"
+
+# Constants in module
+PI = 3.14159
+VERSION = "1.0"
+
+# Using the "module" functions
+print("Custom Calculator Module:")
+print(f"Add 10 + 5 = {add(10, 5)}")
+print(f"Subtract 10 - 3 = {subtract(10, 3)}")
+print(f"Multiply 4 * 6 = {multiply(4, 6)}")
+print(f"Divide 15 / 3 = {divide(15, 3)}")
+print(f"Pi constant: {PI}")
+print(f"Module version: {VERSION}")
+
+# Example of what importing would look like:
+print("\n# How you would import in practice:")
+print("# import calculator")
+print("# result = calculator.add(5, 3)")
+print("# from calculator import multiply")
+print("# result = multiply(4, 7)")</textarea>
+                                <button class="run-btn">Run Code</button>
+                            </div>
+                            <div class="code-output">
+                                <div class="output-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quiz for Modules -->
+                <div class="quiz-section">
+                    <h3><i class="fas fa-question-circle"></i> Modules Quiz</h3>
+                    <div class="quiz" data-section="modules">
+                        <div class="question active" data-question="0">
+                            <h4>Which keyword is used to import a module?</h4>
+                            <div class="options">
+                                <button class="option" data-option="0">include</button>
+                                <button class="option" data-option="1">import</button>
+                                <button class="option" data-option="2">require</button>
+                                <button class="option" data-option="3">use</button>
+                            </div>
+                            <div class="feedback"></div>
+                        </div>
+                        <div class="quiz-navigation">
+                            <button class="prev-question" disabled>Previous</button>
+                            <span class="question-counter">1 of 1</span>
+                            <button class="next-question">Next</button>
+                        </div>
+                        <div class="quiz-results">
+                            <p class="score"></p>
+                            <button class="restart-quiz">Restart Quiz</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Python Unit-I Complete</h3>
+                    <p>You've covered all the fundamentals of Python programming!</p>
+                </div>
+                <div class="footer-stats">
+                    <div class="stat">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Sections</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Topics</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Examples</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
